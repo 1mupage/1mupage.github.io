@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru" data-accent="terracotta" data-rooms="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Гостевой дом МАРКИЗЕТТА — отдых у Азовского моря в Бердянске</title>
+<meta name="description" content="Гостевой дом МАРКИЗЕТТА в Бердянске — уютные номера у Азовского моря рядом с городским пляжем и Приморской площадью. Бронирование по телефону и в Telegram." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Гостевой дом Маркизетта — на главную">
+      <span class="brand__name">Маркизетта</span>
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span class="brand__sub">Бердянск</span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#why" class="nav-link">О доме</a>
+      <a href="#rooms" class="nav-link">Номера</a>
+      <a href="#facilities" class="nav-link">Удобства</a>
+      <a href="#gallery" class="nav-link">Отдых</a>
+      <a href="#location" class="nav-link">Расположение</a>
+      <a href="#contacts" class="nav-link">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+79902836903" class="header-phone">
+        <span class="header-phone__icon" aria-hidden="true">☎</span>
+        <span>+7 990 283-69-03</span>
+      </a>
+      <button class="btn btn--dark btn--book-header" data-open-booking type="button">Забронировать</button>
+      <button class="burger" data-burger type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" data-mobile-menu hidden>
+  <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+    <a href="#why" class="mobile-menu__link" data-mm-link>О доме <span>01</span></a>
+    <a href="#rooms" class="mobile-menu__link" data-mm-link>Номера <span>02</span></a>
+    <a href="#facilities" class="mobile-menu__link" data-mm-link>Удобства <span>03</span></a>
+    <a href="#gallery" class="mobile-menu__link" data-mm-link>Отдых <span>04</span></a>
+    <a href="#location" class="mobile-menu__link" data-mm-link>Расположение <span>05</span></a>
+    <a href="#contacts" class="mobile-menu__link" data-mm-link>Контакты <span>06</span></a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <a href="tel:+79902836903" class="mobile-menu__phone">+7 990 283-69-03</a>
+    <button class="btn btn--primary" data-open-booking type="button">Забронировать номер</button>
+    <a href="https://t.me/GUESTHOUSEMARKIZETTA" target="_blank" rel="noopener" class="mobile-menu__tg">Написать в Telegram →</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__ghost" aria-hidden="true">Маркизетта</div>
+    <div class="wrap">
+      <div class="hero__top">
+        <h1 class="display h-xl hero__title">Гостевой дом<br /><span class="accent-word">Маркизетта</span></h1>
+        <div class="hero__aside">
+          <div class="hero__thumb">
+            <img src="assets/hero-thumb.jpg" alt="Интерьер номера гостевого дома" />
+          </div>
+          <p>Уютный гостевой дом у Азовского моря — тёплый приём, домашний комфорт и море в нескольких минутах.</p>
+        </div>
+      </div>
+
+      <div class="hero__metarow">
+        <span class="meta meta--accent">Бердянск · Азовское море</span>
+        <span class="meta">Открылись в 2026</span>
+        <span class="meta">У самого моря</span>
+      </div>
+
+      <div class="hero__image">
+        <img src="assets/facade.jpg" alt="Фасад гостевого дома Маркизетта" />
+        <div class="hero__badges">
+          <span class="hero__badge">Wi-Fi</span>
+          <span class="hero__badge">Кондиционер в номере</span>
+          <span class="hero__badge">Парковка</span>
+          <span class="hero__badge">Зона барбекю</span>
+        </div>
+        <div class="hero__cta">
+          <button class="btn btn--light btn--lg" data-open-booking type="button">Забронировать</button>
+          <a href="#rooms" class="arrow-btn arrow-btn--solid" aria-label="К номерам">↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="section why" id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display h-lg">Место,<br /><span class="accent-word">куда хочется</span> вернуться</h2>
+        <p class="lead section-head__intro">Мы только открыли свои двери — и у вас есть шанс стать одними из первых гостей. Каждый номер продуман для вашего комфорта.</p>
+      </div>
+
+      <div class="why__grid">
+        <div class="why__media">
+          <div class="why__media-img">
+            <img src="assets/courtyard.jpg" alt="Внутренний двор гостевого дома" loading="lazy" />
+          </div>
+          <div class="why__stats">
+            <div class="why__stat"><b>3</b><span>категории номеров</span></div>
+            <div class="why__stat"><b>5 мин</b><span>до пляжа</span></div>
+            <div class="why__stat"><b>2026</b><span>год открытия</span></div>
+          </div>
+        </div>
+
+        <ol class="why__list">
+          <li class="why-item">
+            <span class="why-item__num">01</span>
+            <div class="why-item__body">
+              <h3>Всё в номере</h3>
+              <p>В каждой комнате — свой санузел, холодильник, кондиционер, телевизор и другие необходимые мелочи для комфортного отдыха.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <span class="why-item__num">02</span>
+            <div class="why-item__body">
+              <h3>В двух шагах от моря</h3>
+              <p>Городской пляж и Приморская площадь совсем рядом — множество вариантов развлечений для вас и детей.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <span class="why-item__num">03</span>
+            <div class="why-item__body">
+              <h3>Зоны отдыха</h3>
+              <p>Столовая зона, мини-кухня и беседка с барбекю — есть где собраться компанией и спокойно провести вечер.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <span class="why-item__num">04</span>
+            <div class="why-item__body">
+              <h3>Спокойствие у моря</h3>
+              <p>Если вы любитель тихого отдыха у воды — это именно то, что вы у нас точно найдёте.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROOMS ============ -->
+  <section class="rooms" id="rooms">
+    <div class="wrap">
+      <div class="rooms__panel">
+        <div class="rooms__head">
+          <h2 class="display h-md">Номера<br /><span class="accent-word">и категории</span></h2>
+          <div>
+            <p class="rooms__intro">Для вашего удобства мы подготовили несколько категорий номеров — выбирайте по составу мест и комфорту. В каждом есть санузел, кондиционер, холодильник и телевизор.</p>
+            <div class="rooms__nav">
+              <button class="rooms__viewall" data-open-booking type="button">Забронировать номер →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="rooms__track" data-room-track>
+
+          <article class="room-card">
+            <button class="room-card__media" data-room-gallery="assets/room1-1.jpg,assets/room1-2.jpg,assets/room1-3.jpg,assets/room1-4.jpg,assets/room1-5.jpg,assets/room1-6.jpg,assets/room1-7.jpg,assets/room1-8.jpg,assets/room1-9.jpg" data-room-title="Двухместный стандарт" type="button" aria-label="Открыть фотогалерею номера «Двухместный стандарт»">
+              <span class="room-card__tag">Двухместный</span>
+              <span class="room-card__price">по запросу</span>
+              <img src="assets/room1-1.jpg" alt="Двухместный стандарт" loading="lazy" />
+              <span class="room-card__count">1 / 9</span>
+            </button>
+            <div class="room-card__body">
+              <h3 class="room-card__name">Двухместный стандарт</h3>
+              <div class="room-card__meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5M3 12h18M3 12v6M21 12v6M6 9h4M14 9h4"/></svg>2 чел.</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 18v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6M4 14h16"/></svg>1–2 кровати</span>
+              </div>
+              <p class="room-card__desc">Комфортный номер для двоих. Варианты: 2 односпальные, 1 двуспальная или двуспальная с личным балкончиком.</p>
+              <div class="room-card__foot">
+                <button class="room-card__book" data-open-booking data-room="Двухместный стандарт" type="button">Забронировать →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <button class="room-card__media" data-room-gallery="assets/room2-1.jpg,assets/room2-2.jpg,assets/room2-3.jpg,assets/room2-4.jpg,assets/room2-5.jpg,assets/room2-6.jpg" data-room-title="Двухместный улучшенный" type="button" aria-label="Открыть фотогалерею номера «Двухместный улучшенный»">
+              <span class="room-card__tag">Люкс</span>
+              <span class="room-card__price">по запросу</span>
+              <img src="assets/room2-1.jpg" alt="Двухместный улучшенный" loading="lazy" />
+              <span class="room-card__count">1 / 6</span>
+            </button>
+            <div class="room-card__body">
+              <h3 class="room-card__name">Двухместный улучшенный</h3>
+              <div class="room-card__meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5M3 12h18M3 12v6M21 12v6M6 9h4M14 9h4"/></svg>2 чел.</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>2 комнаты</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4v16M4 6h12v8H4"/></svg>балкон</span>
+              </div>
+              <p class="room-card__desc">Просторный двухкомнатный номер с личным балконом — больше пространства и приватности для спокойного отдыха.</p>
+              <div class="room-card__foot">
+                <button class="room-card__book" data-open-booking data-room="Двухместный улучшенный (Люкс)" type="button">Забронировать →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <button class="room-card__media" data-room-gallery="assets/room3-1.jpg,assets/room3-2.jpg,assets/room3-3.jpg,assets/room3-4.jpg,assets/room3-5.jpg,assets/room3-6.jpg,assets/room3-7.jpg,assets/room3-8.jpg" data-room-title="Трёхместный номер" type="button" aria-label="Открыть фотогалерею номера «Трёхместный номер»">
+              <span class="room-card__tag">Трёхместный</span>
+              <span class="room-card__price">по запросу</span>
+              <img src="assets/room3-1.jpg" alt="Трёхместный номер" loading="lazy" />
+              <span class="room-card__count">1 / 8</span>
+            </button>
+            <div class="room-card__body">
+              <h3 class="room-card__name">Трёхместный номер</h3>
+              <div class="room-card__meta">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5M3 12h18M3 12v6M21 12v6M6 9h4M14 9h4"/></svg>3 чел.</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 18v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6M4 14h16"/></svg>3 кровати</span>
+              </div>
+              <p class="room-card__desc">Отличный выбор для компании друзей или семьи с ребёнком. Варианты: 3 односпальные или двуспальная + односпальная.</p>
+              <div class="room-card__foot">
+                <button class="room-card__book" data-open-booking data-room="Трёхместный номер" type="button">Забронировать →</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p style="color:rgba(255,255,255,.5); font-size:13.5px; margin:22px 0 0;">Нажмите на фото номера, чтобы посмотреть всю галерею. Цены уточняйте по телефону или в Telegram.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FACILITIES ============ -->
+  <section class="section facilities" id="facilities">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display h-lg">Удобства,<br />которые мы <span class="accent-word">даём вам</span></h2>
+        <p class="lead section-head__intro">Всё необходимое для комфортного отдыха — продумано и доступно каждому гостю.</p>
+      </div>
+
+      <div class="fac-grid">
+        <article class="fac-card">
+          <div class="fac-card__img"><img src="assets/dining-2.jpg" alt="Столовая зона" loading="lazy" /></div>
+          <div class="fac-card__foot">
+            <h3 class="fac-card__name">Столовая<br />зона</h3>
+            <a href="#gallery" class="arrow-btn" aria-label="Подробнее">↗</a>
+            <p class="fac-card__desc">Светлая столовая и мини-кухня — удобно завтракать и собираться компанией.</p>
+          </div>
+        </article>
+
+        <article class="fac-card">
+          <div class="fac-card__img"><img src="assets/bbq-gazebo.jpg" alt="Зона барбекю" loading="lazy" /></div>
+          <div class="fac-card__foot">
+            <h3 class="fac-card__name">Зона<br />барбекю</h3>
+            <a href="#gallery" class="arrow-btn" aria-label="Подробнее">↗</a>
+            <p class="fac-card__desc">Уютная беседка с мангалом — идеально для вечеров с шашлыком.</p>
+          </div>
+        </article>
+
+        <article class="fac-card">
+          <div class="fac-card__img"><img src="assets/parking-1.jpg" alt="Парковка" loading="lazy" /></div>
+          <div class="fac-card__foot">
+            <h3 class="fac-card__name">Парковка<br />для авто</h3>
+            <a href="#location" class="arrow-btn" aria-label="Подробнее">↗</a>
+            <p class="fac-card__desc">Места под навесом во дворе — ваш автомобиль всегда рядом и в тени.</p>
+          </div>
+        </article>
+
+        <article class="fac-card">
+          <div class="fac-card__img"><img src="assets/dining-3.jpg" alt="Зоны отдыха и Wi-Fi" loading="lazy" /></div>
+          <div class="fac-card__foot">
+            <h3 class="fac-card__name">Wi-Fi<br />и сервис</h3>
+            <a href="#contacts" class="arrow-btn" aria-label="Подробнее">↗</a>
+            <p class="fac-card__desc">Свободный Wi-Fi на всей территории и возможность привести вещи в порядок.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery-sec" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display h-lg">Двор, беседка<br />и <span class="accent-word">место отдыха</span></h2>
+        <p class="lead section-head__intro">Просторный мощёный двор, беседка с мангалом и столовая зона — посмотрите, как у нас.</p>
+      </div>
+      <div class="gallery" data-lightbox-group>
+        <button class="gallery__item gallery__item--big" data-lightbox="assets/courtyard.jpg" type="button"><img src="assets/courtyard.jpg" alt="Внутренний двор и здание" loading="lazy" /></button>
+        <button class="gallery__item" data-lightbox="assets/bbq-gazebo.jpg" type="button"><img src="assets/bbq-gazebo.jpg" alt="Беседка для отдыха" loading="lazy" /></button>
+        <button class="gallery__item" data-lightbox="assets/bbq-grill.jpg" type="button"><img src="assets/bbq-grill.jpg" alt="Зона барбекю с мангалом" loading="lazy" /></button>
+        <button class="gallery__item" data-lightbox="assets/dining-1.jpg" type="button"><img src="assets/dining-1.jpg" alt="Столовая зона" loading="lazy" /></button>
+        <button class="gallery__item" data-lightbox="assets/parking-1.jpg" type="button"><img src="assets/parking-1.jpg" alt="Парковка под навесом" loading="lazy" /></button>
+        <button class="gallery__item" data-lightbox="assets/dining-2.jpg" type="button"><img src="assets/dining-2.jpg" alt="Столовая зона, вид 2" loading="lazy" /></button>
+        <button class="gallery__item" data-lightbox="assets/bbq-sink.jpg" type="button"><img src="assets/bbq-sink.jpg" alt="Зона барбекю — мойка" loading="lazy" /></button>
+        <button class="gallery__item" data-lightbox="assets/parking-2.jpg" type="button"><img src="assets/parking-2.jpg" alt="Парковка, вид 2" loading="lazy" /></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION ============ -->
+  <section class="section location" id="location">
+    <div class="wrap">
+      <div class="location__grid">
+        <div class="location__info">
+          <p class="meta meta--accent" style="margin-bottom:16px;">Расположение</p>
+          <h2 class="display h-md">Как нас<br />найти</h2>
+          <ul class="location__points">
+            <li><b>Адрес</b><span>Запорожская обл., г. Бердянск, ул. Свердлова, 31 (старое название — Гостиная, 31)</span></li>
+            <li><b>Пляж</b><span>Городской пляж — в нескольких минутах ходьбы</span></li>
+            <li><b>Площадь</b><span>Приморская площадь рядом — развлечения для всей семьи</span></li>
+            <li><b>Парковка</b><span>На территории гостевого дома</span></li>
+          </ul>
+          <div class="location__actions">
+            <a class="btn btn--dark btn--lg" href="https://yandex.ru/maps/?text=Бердянск, улица Свердлова, 31" target="_blank" rel="noopener">Открыть в Яндекс.Картах</a>
+            <button class="btn btn--ghost btn--lg" data-open-booking type="button">Забронировать</button>
+          </div>
+        </div>
+        <div class="location__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa546a41429d4d264be3661e1c7c747e6cb25f4ac7dc8855ade8e6821b497c482&amp;source=constructor" width="100%" height="500" frameborder="0" title="Гостевой дом Маркизетта на карте" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTS ============ -->
+  <section class="section contacts" id="contacts">
+    <div class="wrap">
+      <div class="contacts__top">
+        <h2 class="display h-lg">Ждём вас<br /><span class="accent-word">в гости</span></h2>
+        <div>
+          <p>Забронировать номер для себя, друзей и близких можно по телефону или в Telegram. Будем рады видеть вас на отдыхе у Азовского моря!</p>
+          <button class="btn btn--light btn--lg" data-open-booking type="button">Оставить заявку на бронь</button>
+        </div>
+      </div>
+      <div class="contacts__cards">
+        <a class="contact-card" href="tel:+79902836903">
+          <span class="contact-card__label">Телефон</span>
+          <span class="contact-card__value">+7 990 283-69-03</span>
+          <span class="contact-card__note">звонок и Telegram по этому номеру</span>
+        </a>
+        <a class="contact-card" href="https://t.me/GUESTHOUSEMARKIZETTA" target="_blank" rel="noopener">
+          <span class="contact-card__label">Telegram</span>
+          <span class="contact-card__value">@GUESTHOUSEMARKIZETTA</span>
+          <span class="contact-card__note">написать напрямую</span>
+        </a>
+        <a class="contact-card" href="https://t.me/MARKIZETTA_guesthouse" target="_blank" rel="noopener">
+          <span class="contact-card__label">Telegram-канал</span>
+          <span class="contact-card__value">MARKIZETTA_guesthouse</span>
+          <span class="contact-card__note">новости и фото</span>
+        </a>
+        <a class="contact-card" href="mailto:markizetta9@gmail.com">
+          <span class="contact-card__label">Почта</span>
+          <span class="contact-card__value">markizetta9@gmail.com</span>
+          <span class="contact-card__note">пишите по любым вопросам</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__big">Маркизетта</div>
+    <div class="footer__inner">
+      <div class="footer__col">
+        <h4>Гостевой дом</h4>
+        <span>Бердянск · Азовское море</span>
+        <span>ул. Свердлова, 31</span>
+      </div>
+      <div class="footer__col">
+        <h4>Разделы</h4>
+        <a href="#why">О доме</a>
+        <a href="#rooms">Номера</a>
+        <a href="#facilities">Удобства</a>
+        <a href="#gallery">Отдых</a>
+        <a href="#location">Расположение</a>
+      </div>
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <a href="tel:+79902836903">+7 990 283-69-03</a>
+        <a href="https://t.me/GUESTHOUSEMARKIZETTA" target="_blank" rel="noopener">@GUESTHOUSEMARKIZETTA</a>
+        <a href="mailto:markizetta9@gmail.com">markizetta9@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Гостевой дом «Маркизетта»</span>
+    <span>#Бердянск · #АзовскоеМоре · #ОтдыхВБердянске</span>
+  </div>
+</footer>
+
+<!-- ============ BOOKING MODAL ============ -->
+<div class="modal" data-modal hidden>
+  <div class="modal__overlay" data-modal-close></div>
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+    <button class="modal__close" data-modal-close type="button" aria-label="Закрыть">×</button>
+    <div class="modal__head">
+      <p class="meta meta--accent">Бронирование</p>
+      <h2 class="modal__title" id="booking-title">Оставить заявку</h2>
+      <p class="modal__sub">Заполните форму и отправьте заявку в Telegram или на почту. Мы свяжемся с вами и подтвердим бронь.</p>
+    </div>
+    <form class="booking-form" data-booking-form novalidate>
+      <div class="field">
+        <label for="bf-name">Ваше имя</label>
+        <input id="bf-name" name="name" type="text" placeholder="Как к вам обращаться" required />
+      </div>
+      <div class="field">
+        <label for="bf-phone">Телефон</label>
+        <input id="bf-phone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" required />
+      </div>
+      <div class="field field--full">
+        <label for="bf-room">Категория номера</label>
+        <select id="bf-room" name="room">
+          <option>Двухместный стандарт</option>
+          <option>Двухместный улучшенный (Люкс)</option>
+          <option>Трёхместный номер</option>
+          <option>Пока не определился(ась)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="bf-in">Заезд</label>
+        <input id="bf-in" name="checkin" type="date" />
+      </div>
+      <div class="field">
+        <label for="bf-out">Выезд</label>
+        <input id="bf-out" name="checkout" type="date" />
+      </div>
+      <div class="field">
+        <label for="bf-guests">Гостей</label>
+        <input id="bf-guests" name="guests" type="number" min="1" max="10" value="2" />
+      </div>
+      <div class="field field--full">
+        <label for="bf-comment">Комментарий <span class="muted">(необязательно)</span></label>
+        <textarea id="bf-comment" name="comment" rows="2" placeholder="Пожелания, вопросы…"></textarea>
+      </div>
+      <p class="booking-form__error" data-form-error hidden>Пожалуйста, заполните имя и телефон.</p>
+      <div class="booking-form__actions">
+        <button class="btn btn--primary btn--lg" type="submit" data-send="telegram">Отправить заявку</button>
+      </div>
+      <a class="booking-form__call" href="tel:+79902836903">или позвоните: +7 990 283-69-03</a>
+    </form>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" data-lightbox-modal hidden>
+  <button class="lightbox__close" data-lightbox-close type="button" aria-label="Закрыть">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" data-lightbox-prev type="button" aria-label="Назад">‹</button>
+  <img class="lightbox__img" data-lightbox-img alt="" />
+  <button class="lightbox__nav lightbox__nav--next" data-lightbox-next type="button" aria-label="Вперёд">›</button>
+  <div class="lightbox__caption" data-lightbox-caption></div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" data-toast hidden></div>
+
+<!-- ============ Tweaks mount ============ -->
+<div id="tweaks-root"></div>
+
+<script src="app.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-config.jsx"></script>
+
+</body>
+</html>
