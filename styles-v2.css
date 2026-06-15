@@ -427,6 +427,14 @@ section[id]{ scroll-margin-top:var(--header-h); }
   body{ font-size:16px; }
   .booking-form{ grid-template-columns:1fr; }
   .booking-form__actions .btn{ min-width:100%; }
+  /* keep the header within the screen on phones */
+  .brand{ gap:9px; }
+  .header-inner{ gap:0; justify-content:space-between; }
+  .nav + .header-actions{ margin-left:0; }
+}
+/* on smaller phones drop the city tag so logo + name + burger never overflow */
+@media (max-width:480px){
+  .brand__dot, .brand__sub{ display:none; }
 }
 
 /* ============================================================
